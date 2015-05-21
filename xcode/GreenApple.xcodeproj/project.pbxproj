@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		32B995521A8EDA0F00E25C93 /* GameSound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B9954D1A8EDA0F00E25C93 /* GameSound.cpp */; };
+		32B995531A8EDA0F00E25C93 /* InputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B9954E1A8EDA0F00E25C93 /* InputHandler.cpp */; };
+		32B995541A8EDA0F00E25C93 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B9954F1A8EDA0F00E25C93 /* Player.cpp */; };
+		32B995551A8EDA0F00E25C93 /* PlayerState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995501A8EDA0F00E25C93 /* PlayerState.cpp */; };
+		32B995561A8EDA0F00E25C93 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995511A8EDA0F00E25C93 /* Scene.cpp */; };
+		32B995841A94DA9D00E25C93 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995831A94DA9D00E25C93 /* Ball.cpp */; };
+		32B995861A9517BA00E25C93 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995851A9517BA00E25C93 /* Physics.cpp */; };
+		32B995EF1A9F718C00E25C93 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995EE1A9F718C00E25C93 /* Score.cpp */; };
+		32B995F21A9FD0BD00E25C93 /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B995F11A9FD0BD00E25C93 /* GameState.cpp */; };
+		32F598BE1AA22488008142C9 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32F598BD1AA22488008142C9 /* Game.cpp */; };
+		32F598C51AA23D5D008142C9 /* GUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32F598C41AA23D5D008142C9 /* GUI.cpp */; };
+		32F599091AA4FCF7008142C9 /* TDIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 32F598F81AA4FCF7008142C9 /* TDIcon.icns */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		ACAE3947CEA346A1867FFEDE /* GreenAppleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B33BA17835B4A469F0EB7BA /* GreenAppleApp.cpp */; };
+		DAF58F9B3C9F405AB61C057F /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4B13DD2B563043BEACC59475 /* CinderApp.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		25E9C2B155EE4AE4BB13F311 /* GreenApple_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = GreenApple_Prefix.pch; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32B995481A8ED9FB00E25C93 /* GameSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSound.h; path = ../include/GameSound.h; sourceTree = "<group>"; };
+		32B995491A8ED9FB00E25C93 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputHandler.h; path = ../include/InputHandler.h; sourceTree = "<group>"; };
+		32B9954A1A8ED9FB00E25C93 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../include/Player.h; sourceTree = "<group>"; };
+		32B9954B1A8ED9FB00E25C93 /* PlayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerState.h; path = ../include/PlayerState.h; sourceTree = "<group>"; };
+		32B9954C1A8ED9FB00E25C93 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scene.h; path = ../include/Scene.h; sourceTree = "<group>"; };
+		32B9954D1A8EDA0F00E25C93 /* GameSound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSound.cpp; path = ../src/GameSound.cpp; sourceTree = "<group>"; };
+		32B9954E1A8EDA0F00E25C93 /* InputHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputHandler.cpp; path = ../src/InputHandler.cpp; sourceTree = "<group>"; };
+		32B9954F1A8EDA0F00E25C93 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../src/Player.cpp; sourceTree = "<group>"; };
+		32B995501A8EDA0F00E25C93 /* PlayerState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerState.cpp; path = ../src/PlayerState.cpp; sourceTree = "<group>"; };
+		32B995511A8EDA0F00E25C93 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = ../src/Scene.cpp; sourceTree = "<group>"; };
+		32B995571A9159CF00E25C93 /* Physics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Physics.h; path = ../include/Physics.h; sourceTree = "<group>"; };
+		32B995581A91607800E25C93 /* Ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = ../include/Ball.h; sourceTree = "<group>"; };
+		32B995831A94DA9D00E25C93 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ball.cpp; path = ../src/Ball.cpp; sourceTree = "<group>"; };
+		32B995851A9517BA00E25C93 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Physics.cpp; path = ../src/Physics.cpp; sourceTree = "<group>"; };
+		32B995E21A9BB33F00E25C93 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Util.h; path = ../include/Util.h; sourceTree = "<group>"; };
+		32B995ED1A9F6F9B00E25C93 /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Score.h; path = ../include/Score.h; sourceTree = "<group>"; };
+		32B995EE1A9F718C00E25C93 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = ../src/Score.cpp; sourceTree = "<group>"; };
+		32B995F01A9FD0A900E25C93 /* GameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameState.h; path = ../include/GameState.h; sourceTree = "<group>"; };
+		32B995F11A9FD0BD00E25C93 /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameState.cpp; path = ../src/GameState.cpp; sourceTree = "<group>"; };
+		32F598BC1AA223ED008142C9 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../include/Game.h; sourceTree = "<group>"; };
+		32F598BD1AA22488008142C9 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = ../src/Game.cpp; sourceTree = "<group>"; };
+		32F598C31AA23D41008142C9 /* GUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GUI.h; path = ../include/GUI.h; sourceTree = "<group>"; };
+		32F598C41AA23D5D008142C9 /* GUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GUI.cpp; path = ../src/GUI.cpp; sourceTree = "<group>"; };
+		32F598F81AA4FCF7008142C9 /* TDIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TDIcon.icns; path = ../resources/TDIcon.icns; sourceTree = "<group>"; };
+		4B13DD2B563043BEACC59475 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		62B6C7DE20594F67833ADE98 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GreenApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B33BA17835B4A469F0EB7BA /* GreenAppleApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = GreenAppleApp.cpp; path = ../src/GreenAppleApp.cpp; sourceTree = "<group>"; };
+		A85A0CA4FCEA4E878CB0E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9B33BA17835B4A469F0EB7BA /* GreenAppleApp.cpp */,
+				32F598C01AA229E7008142C9 /* Modules */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* GreenApple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* GreenApple */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = GreenApple;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				25E9C2B155EE4AE4BB13F311 /* GreenApple_Prefix.pch */,
+				62B6C7DE20594F67833ADE98 /* Resources.h */,
+				32B995E11A9BB31F00E25C93 /* Util */,
+				32F598BF1AA229CE008142C9 /* Modules */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32F598F81AA4FCF7008142C9 /* TDIcon.icns */,
+				4B13DD2B563043BEACC59475 /* CinderApp.icns */,
+				A85A0CA4FCEA4E878CB0E5ED /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32B995591A91625E00E25C93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32B995481A8ED9FB00E25C93 /* GameSound.h */,
+				32B9954C1A8ED9FB00E25C93 /* Scene.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		32B9955A1A91628200E25C93 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				32B995491A8ED9FB00E25C93 /* InputHandler.h */,
+				32B9954A1A8ED9FB00E25C93 /* Player.h */,
+				32B9954B1A8ED9FB00E25C93 /* PlayerState.h */,
+				32B995571A9159CF00E25C93 /* Physics.h */,
+				32B995581A91607800E25C93 /* Ball.h */,
+				32B995ED1A9F6F9B00E25C93 /* Score.h */,
+				32B995F01A9FD0A900E25C93 /* GameState.h */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		32B9955B1A9162AB00E25C93 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				32B9954E1A8EDA0F00E25C93 /* InputHandler.cpp */,
+				32B9954F1A8EDA0F00E25C93 /* Player.cpp */,
+				32B995501A8EDA0F00E25C93 /* PlayerState.cpp */,
+				32B995831A94DA9D00E25C93 /* Ball.cpp */,
+				32B995851A9517BA00E25C93 /* Physics.cpp */,
+				32B995EE1A9F718C00E25C93 /* Score.cpp */,
+				32B995F11A9FD0BD00E25C93 /* GameState.cpp */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		32B9955C1A9162B800E25C93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32B995511A8EDA0F00E25C93 /* Scene.cpp */,
+				32B9954D1A8EDA0F00E25C93 /* GameSound.cpp */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		32B995E11A9BB31F00E25C93 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				32B995E21A9BB33F00E25C93 /* Util.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		32B995E71A9E30E900E25C93 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				32F598BC1AA223ED008142C9 /* Game.h */,
+				32B995591A91625E00E25C93 /* View */,
+				32B9955A1A91628200E25C93 /* Logic */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		32B995E81A9E30F400E25C93 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				32F598BD1AA22488008142C9 /* Game.cpp */,
+				32B9955C1A9162B800E25C93 /* View */,
+				32B9955B1A9162AB00E25C93 /* Logic */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		32F598BF1AA229CE008142C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32F598C21AA23D16008142C9 /* GUI */,
+				32B995E71A9E30E900E25C93 /* Game */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		32F598C01AA229E7008142C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32F598C11AA23D05008142C9 /* GUI */,
+				32B995E81A9E30F400E25C93 /* Game */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		32F598C11AA23D05008142C9 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				32F598C41AA23D5D008142C9 /* GUI.cpp */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		32F598C21AA23D16008142C9 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				32F598C31AA23D41008142C9 /* GUI.h */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* GreenApple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GreenApple" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenApple;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GreenApple;
+			productReference = 8D1107320486CEB800E47090 /* GreenApple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GreenApple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GreenApple */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* GreenApple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F599091AA4FCF7008142C9 /* TDIcon.icns in Resources */,
+				DAF58F9B3C9F405AB61C057F /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B995561A8EDA0F00E25C93 /* Scene.cpp in Sources */,
+				32B995F21A9FD0BD00E25C93 /* GameState.cpp in Sources */,
+				32B995551A8EDA0F00E25C93 /* PlayerState.cpp in Sources */,
+				32B995541A8EDA0F00E25C93 /* Player.cpp in Sources */,
+				ACAE3947CEA346A1867FFEDE /* GreenAppleApp.cpp in Sources */,
+				32B995531A8EDA0F00E25C93 /* InputHandler.cpp in Sources */,
+				32B995521A8EDA0F00E25C93 /* GameSound.cpp in Sources */,
+				32F598BE1AA22488008142C9 /* Game.cpp in Sources */,
+				32B995EF1A9F718C00E25C93 /* Score.cpp in Sources */,
+				32F598C51AA23D5D008142C9 /* GUI.cpp in Sources */,
+				32B995841A94DA9D00E25C93 /* Ball.cpp in Sources */,
+				32B995861A9517BA00E25C93 /* Physics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GreenApple_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = GreenApple;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GreenApple_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = GreenApple;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GreenApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GreenApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
