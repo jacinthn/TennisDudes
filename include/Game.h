@@ -48,7 +48,7 @@ class Game
     int                         mNumPlayers;
     
     bool                        PAUSED;
-    const bool                  DEBUG = false;
+    const bool                  mDEBUG = false;
     
     const float                 WINDOW_WIDTH, WINDOW_HEIGHT;
     

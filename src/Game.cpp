@@ -100,9 +100,9 @@ bool Game::keyDown( const ci::app::KeyEvent& event )
         mScene->pause(); // Pausing the scene activates the pause sceen
         mInput->pause(); // Pausing the input will clear all previous inputs
     }
-    
+
 // Developer commands
-    else if(DEBUG)
+    else if(mDEBUG)
     {
         // Reset ball to bounce in front of Right Player
         if( event.getChar() == '0' )
@@ -175,7 +175,7 @@ void Game::draw()
 {
     mScene->draw();
     
-    if(DEBUG)
+    if(mDEBUG)
     {
         mParams->draw();
     }
