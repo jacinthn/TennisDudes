@@ -7,18 +7,18 @@ Tennis Dudes is a fast-paced, multiplayer tennis game created by Jacinth Nguyen.
 ## Controls
 
 P1
-	* Left: X
-	* Right: V
-	* Jump: D
-	* Down: C
-	* Hit/Servce: Shift
+* Left: X
+* Right: V
+* Jump: D
+* Down: C
+* Hit/Servce: Shift
 
 P2
-	* Left: Left Arrow Key
-	* Right: Right Arrow Key
-	* Jump: Up Arrow Key
-	* Down: Down Arrow Key
-	* Hit/Servce: , (comma)
+* Left: Left Arrow Key
+* Right: Right Arrow Key
+* Jump: Up Arrow Key
+* Down: Down Arrow Key
+* Hit/Servce: , (comma)
 
 'Esc' to pause
 
